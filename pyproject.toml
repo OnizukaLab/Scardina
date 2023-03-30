@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "scardina"
+version = "0.1.0"
+description = ""
+authors = ["Ryuichi Ito <ito.ryuichi@ist.osaka-u.ac.jp>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+numpy = "1.19.3"
+pandas = "1.2.4"
+torch = "1.11.0"
+scipy = "1.8.1"
+psycopg2-binary = "2.8.5"
+sqlparse = "0.4.2"
+pyarrow = "7.0.0"
+networkx = "2.8.4"
+matplotlib = "^3.4.2"
+ipywidgets = "^7.6.3"
+IProgress = "^0.4"
+sklearn = "^0.0"
+nbconvert = "^6.0.7"
+hypernetx = "^1.2"
+celluloid = "^0.2.0"
+igraph = "^0.9.8"
+wandb = "^0.12.9"
+pytorch-lightning = "1.4.9"
+ray = { extras = ["tune"], version = "^1.9.2" }
+optuna = "^2.10.0"
+aioredis = "^2.0.1"
+colorama = "^0.4.4"
+more-itertools = "^8.13.0"
+ipykernel = "^6.15.1"
+pandas-profiling = "^3.2.0"
+moz-sql-parser = "^4.40.21126"
+klepto = "^0.2.2"
+grandalf = "^0.7"
+tqdm = "^4.64.0"
+ceb = {git = "git@github.com:OnizukaLab/CEB.git", rev = "main"}
+opencensus = "^0.10.0"
+aiohttp_cors = "^0.7.0"
+rich = "^12.5.1"
+torchmetrics = "0.7.3"
+
+[tool.poetry.dev-dependencies]
+flake8 = "3.9.1"
+pytorch_memlab = "0.2.2"
+memory_profiler = "0.58.0"
+line_profiler = "3.1.0"
+black = "22.8.0"
+
+[build-system]
+requires = ["poetry-core> = 1.0.0"]
+build-backend = "poetry.core.masonry.api"
