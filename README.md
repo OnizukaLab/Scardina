@@ -99,7 +99,7 @@ You can find results in `results/<benchmark_name>` after trial.
 @article{scardina,
     author = {Ito, Ryuichi and Sasaki, Yuya and Xiao, Chuan and Onizuka, Makoto},
     title = {{Scardina: Scalable Join Cardinality Estimation by Multiple Density Estimators}},
-    journal = {{arXiv preprint arXiv:XXXX.XXXXX}},
+    journal = {{arXiv preprint arXiv:2303.18042}},
     year = {2023}
 }
 ```
