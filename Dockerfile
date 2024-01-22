@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.2-cudnn7-devel-ubuntu18.04
+FROM nvidia/cuda:11.0.3-cudnn8-devel-ubuntu20.04
 
 WORKDIR /workspaces/Scardina
 
@@ -9,6 +9,8 @@ RUN mv /etc/apt/sources.list.d /etc/apt/_sources.list.d \
  && curl -O https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-keyring_1.0-1_all.deb \
  && dpkg -i cuda-keyring_1.0-1_all.deb \
  && mv /etc/apt/_sources.list.d /etc/apt/sources.list.d
+
+RUN DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get -y install tzdata
 
 RUN apt update \
  && apt install -y --no-install-recommends \
